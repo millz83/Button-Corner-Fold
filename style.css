@@ -1,0 +1,54 @@
+body {
+    background:grey;
+}
+
+.btnBox {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+}
+
+button {
+    position: relative;
+    padding:20px 40px;
+    margin:24px;
+    overflow: hidden;
+    transition:border-radius 0s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:30px;
+    font-weight:600;
+    color:#fff;
+    background:slateblue;
+    border:none;
+
+
+}
+
+button:before {
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    border-style:solid;
+    width:0;
+    border-width:20px;
+    border-color: pink rgba(255,255,255,0.4) rgba(255,255,255,0.4) pink;
+    border-radius: 0 0 5px  0;
+    transition:border-width 1s;
+
+}
+
+button:hover {
+    transition-delay:c.2s;
+}
+
+button:hover:before {
+    border-width: 0px;
+}
+
+
+
+
+
